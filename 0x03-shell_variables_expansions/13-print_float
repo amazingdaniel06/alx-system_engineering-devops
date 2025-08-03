@@ -1,2 +1,2 @@
 #!/bin/bash
-awk "BEGIN {printf \"%.2f\n\", 98 / $NUM}"
+python3 -c "print('{:.2f}'.format(98 / float('$NUM')))"
