@@ -1,2 +1,2 @@
 #!/bin/bash
-(for l1 in {a..z} ; do echo $l1 ; done) | while read a ; do (for l2 in {a..z} ; do [ "$a$l2" != "oo" ] && echo "$a$l2" ; done) ; done
+(for l1 in {a..z} ; do echo $l1 ; done) | while read a ; do (for l2 in {a..z} ; do [ "$a$l2" != "oo" ] echo "$a$l2" ; done) ; done
