@@ -1,16 +1,2 @@
 #!/bin/bash
-for i in $(seq 0 9)
-do
-  for j in $(seq 0 9)
-  do
-    if [ "$i" -lt "$j" ]
-    then
-      printf "%d%d" "$i" "$j"
-      if [ "$i" -ne 8 ] || [ "$j" -ne 9 ]
-      then
-        printf ", "
-      fi
-    fi
-  done
-done
-printf "\n"
+for l1 in {a..z}; do for l2 in {a..z}; do [ "$l1$l2" != "oo" ] && echo "$l1$l2"; done; done
