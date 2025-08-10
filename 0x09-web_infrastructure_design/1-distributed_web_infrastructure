@@ -1,0 +1,11 @@
+          [Load Balancer: HAProxy]
+            |         (Round Robin)
+        +---+---+
+        |       |
+[Server1]   [Server2]
+ Nginx       Nginx
+ App server  App server
+ App files   App files
+        \     /
+         \   /
+        [MySQL Primary + Replica]
