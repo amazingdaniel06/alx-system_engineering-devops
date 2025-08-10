@@ -1,1 +1,5 @@
-
+User → Internet → [Server: 8.8.8.8]
+ ├─ Nginx (Web server)
+ ├─ App server (runs code)
+ ├─ App files (code base)
+ └─ MySQL DB
