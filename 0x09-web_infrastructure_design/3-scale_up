@@ -1,0 +1,15 @@
+         Internet
+            |
+       [ DNS Server ]
+            |
+   ------------------------
+   |                      |
+[ LB #1 ] <-----> [ LB #2 ]  (HAProxy cluster)
+   |                      |
+-----------------    -----------------
+|   Web Server  |    |   Web Server  |   (Static content)
+|  + App Server |    |  + App Server |   (Dynamic content)
+-----------------    -----------------
+            \            /
+             \          /
+            [ Database Server ]
