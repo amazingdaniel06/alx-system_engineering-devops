@@ -1,0 +1,11 @@
+User → Firewall → [LB: HAProxy + SSL]
+            | (HTTPS)
+         +--+--+
+         |     |
+Firewall |     | Firewall
+Server1       Server2
+(Nginx, App, Monitoring)
+        \     /
+         \   /
+        Firewall
+        [MySQL Primary + Replica + Monitoring]
